@@ -5,10 +5,8 @@ add = a + b
 sub = a - b
 mul = a * b
 
-print("Addition =", add,
-      "\nSubtraction =", sub,
-      "\nMultiplication =", mul)
+print("Addition =", add,"\nSubtraction =", sub,"\nMultiplication =", mul)
 if b!=0:
-    print("divition =",a/b)
+    print("division =",a/b)
 else :
     print("can't divide by 0 ")

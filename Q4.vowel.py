@@ -1,5 +1,5 @@
-charecter = str (input("enter a alphabet :"))
-if charecter in "a e i o u":
-    print ("yes it is a vobal ")
+charecter = (input("enter a alphabet :"))
+if charecter in "aeiouAEIOU":
+    print ("yes",charecter,"is a vowel ")
 else :
-    print("it's a conconet")
+    print(charecter,"is a consonant")
