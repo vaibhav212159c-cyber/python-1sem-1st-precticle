@@ -1,13 +1,24 @@
-num = int (input("enter you number :"))
-if num >=90 and num <100:
-    print("you got A")
-elif num >=80 and num <90:
-    print("you got B")
-elif num >=60 and num <80:
-    print("you got C")
-elif num >=30 and num < 60:
-    print("you got D")
-elif num >=0 and num < 30:
-    print ("you are fail")
-else :
-    print ("enter valid number in range 0 to 100")
+subjects = int(input("Enter number of subjects: ")) 
+total_mark = 0   
+for i in range(subjects):  
+       sub_mark = float(input(f"Enter marks for subject {i + 1}: "))
+       total_mark = total_mark + sub_mark
+
+percentage = total_mark / subjects 
+
+if percentage >= 90:
+    grade = "A+" 
+elif percentage >= 80:   
+    grade = "A"
+elif percentage >= 70: 
+    grade = "B" 
+elif percentage >= 60: 
+    grade = "C" 
+elif percentage >= 40: 
+    grade = "D" 
+else:   
+    grade = "F"  
+
+print("Total Marks:", total_mark)
+print("Percentage:", percentage)
+print("Grade:", grade) 
